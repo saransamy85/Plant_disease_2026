@@ -5,7 +5,7 @@ from tensorflow.keras.preprocessing import image
 from flask import Flask, request, jsonify
 from werkzeug.utils import secure_filename
 #from flask_cors import CORS
-from gevent.pywsgi import WSGIServer
+#from gevent.pywsgi import WSGIServer
 
 # ---------------- APP SETUP ----------------
 app2 = Flask(__name__)
@@ -127,5 +127,6 @@ def test():
 # ---------------- RUN SERVER ----------------
 if __name__ == "__main__":
     print("🚀 API running at http://0.0.0.0:5000")
-    http_server = WSGIServer(("0.0.0.0", 5000), app2)
-    http_server.serve_forever()
+    #http_server = WSGIServer(("0.0.0.0", 5000), app2)
+    #http_server.serve_forever()
+    app2.run(host="0.0.0.0", port=10000)
