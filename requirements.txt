@@ -6,3 +6,4 @@ gevent>=21.0.0
 Werkzeug>=2.0.0
 Pillow>=8.0.0
 scikit-image>=0.18.0
+gunicorn==21.2.0
