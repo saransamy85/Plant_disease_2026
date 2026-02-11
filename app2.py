@@ -4,12 +4,12 @@ import tensorflow as tf
 from tensorflow.keras.preprocessing import image
 from flask import Flask, request, jsonify
 from werkzeug.utils import secure_filename
-from flask_cors import CORS
+#from flask_cors import CORS
 from gevent.pywsgi import WSGIServer
 
 # ---------------- APP SETUP ----------------
 app2 = Flask(__name__)
-CORS(app2)
+#CORS(app2)
 
 UPLOAD_FOLDER = "uploads"
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
